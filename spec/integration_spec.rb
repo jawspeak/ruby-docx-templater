@@ -5,7 +5,7 @@ require 'fileutils'
 
 describe "integration test" do
   let(:data) { DocxTemplater::TestData::DATA }
-  let(:input_file) { "ExampleTemplate.docx" }
+  let(:input_file) { "spec/example_input/ExampleTemplate.docx" }
   let(:output_dir) { "spec/tmp" }
   let(:output_file) { "#{output_dir}/IntegrationTestOutput.docx" }
   before do 
