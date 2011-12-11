@@ -1,7 +1,5 @@
-require 'rspec'
-require 'render_docx_template'
+require 'spec_helper'
 require 'template_processor_spec'
-require 'fileutils'
 
 describe "integration test", :integration => true do
   let(:data) { DocxTemplater::TestData::DATA }

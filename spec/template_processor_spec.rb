@@ -1,5 +1,4 @@
-require 'rspec'
-require 'render_docx_template'
+require 'spec_helper'
 
 module DocxTemplater
   module TestData
@@ -30,10 +29,10 @@ module DocxTemplater
   end
 end
 
-describe DocxTemplater::TemplateProcesser do
+describe DocxTemplater::TemplateProcessor do
   let(:data) { Marshal.load(Marshal.dump(DocxTemplater::TestData::DATA)) } # deep copy
   let(:xml) { File.read('spec/word/document.xml') }
-  let(:parser) { DocxTemplater::TemplateProcesser.new(data) }
+  let(:parser) { DocxTemplater::TemplateProcessor.new(data) }
 
   context "valid xml" do
     it "should render and still be valid XML" do
