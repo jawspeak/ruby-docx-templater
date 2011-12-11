@@ -1,0 +1,1122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<w:document xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:mo="http://schemas.microsoft.com/office/mac/office/2008/main" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mv="urn:schemas-microsoft-com:mac:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" mc:Ignorable="w14 wp14">
+  <w:body>
+    <w:p w14:paraId="1D2C4277" w14:textId="77777777" w:rsidR="00DD4FA9" w:rsidRPr="00B90852" w:rsidRDefault="00CC5193" w:rsidP="0069391E">
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+        <w:jc w:val="center"/>
+      </w:pPr>
+      <w:r w:rsidRPr="00B90852">
+        <w:t xml:space="preserve">Sample Class Information for: </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00B90852">
+        <w:rPr>
+          <w:i/>
+        </w:rPr>
+        <w:t>$TEACHER$</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="45FE9391" w14:textId="77777777" w:rsidR="00CC5193" w:rsidRDefault="00CC5193"/>
+    <w:p w14:paraId="526FEE54" w14:textId="77777777" w:rsidR="00CC5193" w:rsidRDefault="00CC5193"/>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblStyle w:val="MediumShading2-Accent1"/>
+        <w:tblW w:w="0" w:type="auto"/>
+        <w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="4428"/>
+        <w:gridCol w:w="4428"/>
+      </w:tblGrid>
+      <w:tr w:rsidR="00CC5193" w14:paraId="2831217E" w14:textId="77777777" w:rsidTr="00B90852">
+        <w:trPr>
+          <w:cnfStyle w:val="100000000000" w:firstRow="1" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:cnfStyle w:val="001000000100" w:firstRow="0" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="1" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+            <w:tcW w:w="4428" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w14:paraId="2B16DF63" w14:textId="1EFC7516" w:rsidR="00CC5193" w:rsidRDefault="005E509A" w:rsidP="005E509A">
+            <w:pPr>
+              <w:tabs>
+                <w:tab w:val="left" w:pos="3507"/>
+              </w:tabs>
+            </w:pPr>
+            <w:r>
+              <w:t>Summary</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="4428" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w14:paraId="2784AEC2" w14:textId="4C3D47A9" w:rsidR="00CC5193" w:rsidRDefault="00CC5193">
+            <w:pPr>
+              <w:cnfStyle w:val="100000000000" w:firstRow="1" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00CC5193" w14:paraId="726DBD19" w14:textId="77777777" w:rsidTr="00B90852">
+        <w:trPr>
+          <w:cnfStyle w:val="000000100000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="1" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:cnfStyle w:val="001000000000" w:firstRow="0" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+            <w:tcW w:w="4428" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w14:paraId="7FDEB084" w14:textId="77777777" w:rsidR="00CC5193" w:rsidRDefault="00CC5193">
+            <w:r>
+              <w:t>Building</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="4428" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w14:paraId="1D26BEAD" w14:textId="77777777" w:rsidR="00CC5193" w:rsidRDefault="00CC5193">
+            <w:pPr>
+              <w:cnfStyle w:val="000000100000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="1" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+            </w:pPr>
+            <w:r>
+              <w:t>$BUILDING$</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="005E509A" w14:paraId="6B97DE41" w14:textId="77777777" w:rsidTr="00B90852">
+        <w:tc>
+          <w:tcPr>
+            <w:cnfStyle w:val="001000000000" w:firstRow="0" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+            <w:tcW w:w="4428" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w14:paraId="23CC8817" w14:textId="6461E8F4" w:rsidR="005E509A" w:rsidRDefault="005E509A">
+            <w:r>
+              <w:t>Classroom</w:t>
+            </w:r>
+            <w:r>
+              <w:tab/>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="4428" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w14:paraId="788D9B9D" w14:textId="1B32C3DE" w:rsidR="005E509A" w:rsidRDefault="005E509A">
+            <w:pPr>
+              <w:cnfStyle w:val="000000000000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+            </w:pPr>
+            <w:r>
+              <w:t>$CLASSROOM$</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="005E509A" w14:paraId="215050AE" w14:textId="77777777" w:rsidTr="00B90852">
+        <w:trPr>
+          <w:cnfStyle w:val="000000100000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="1" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:cnfStyle w:val="001000000000" w:firstRow="0" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+            <w:tcW w:w="4428" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w14:paraId="76FC6882" w14:textId="77777777" w:rsidR="005E509A" w:rsidRDefault="005E509A">
+            <w:r>
+              <w:t>District</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="4428" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w14:paraId="4C4229F4" w14:textId="77777777" w:rsidR="005E509A" w:rsidRDefault="005E509A">
+            <w:pPr>
+              <w:cnfStyle w:val="000000100000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="1" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+            </w:pPr>
+            <w:r>
+              <w:t>$DISTRICT$</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="005E509A" w14:paraId="35FCE43F" w14:textId="77777777" w:rsidTr="00B90852">
+        <w:tc>
+          <w:tcPr>
+            <w:cnfStyle w:val="001000000000" w:firstRow="0" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+            <w:tcW w:w="4428" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w14:paraId="2133F14A" w14:textId="77777777" w:rsidR="005E509A" w:rsidRDefault="005E509A">
+            <w:r>
+              <w:t>Seniority</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="4428" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w14:paraId="60BC61B2" w14:textId="3494105A" w:rsidR="005E509A" w:rsidRDefault="005E509A">
+            <w:pPr>
+              <w:cnfStyle w:val="000000000000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+            </w:pPr>
+            <w:r>
+              <w:t>$SENORITY$ y</w:t>
+            </w:r>
+            <w:r w:rsidR="00550EF0">
+              <w:t>ea</w:t>
+            </w:r>
+            <w:r>
+              <w:t>rs</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p w14:paraId="76120C60" w14:textId="77777777" w:rsidR="00CC5193" w:rsidRDefault="00CC5193"/>
+    <w:p w14:paraId="5DF76164" w14:textId="5E0C880F" w:rsidR="00B90852" w:rsidRPr="00B90852" w:rsidRDefault="00CC5193">
+      <w:pPr>
+        <w:rPr>
+          <w:u w:val="single"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="0069391E">
+        <w:rPr>
+          <w:u w:val="single"/>
+        </w:rPr>
+        <w:t>Class Roster</w:t>
+      </w:r>
+      <w:r w:rsidR="005F534D">
+        <w:rPr>
+          <w:u w:val="single"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> #SUM:ROSTER# Students</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="4B07EAB4" w14:textId="18ADB97C" w:rsidR="00585580" w:rsidRDefault="005D52B6">
+      <w:pPr>
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:color w:val="FF0000"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t xml:space="preserve">TECHNICAL </w:t>
+      </w:r>
+      <w:r w:rsidR="00585580" w:rsidRPr="00B90852">
+        <w:rPr>
+          <w:b/>
+          <w:color w:val="FF0000"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t xml:space="preserve">NOTE: </w:t>
+      </w:r>
+      <w:r w:rsidR="00B90852" w:rsidRPr="00B90852">
+        <w:rPr>
+          <w:b/>
+          <w:color w:val="FF0000"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t xml:space="preserve">You will probably need to </w:t>
+      </w:r>
+      <w:r w:rsidR="00747C65">
+        <w:rPr>
+          <w:b/>
+          <w:color w:val="FF0000"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t xml:space="preserve">extract and </w:t>
+      </w:r>
+      <w:r w:rsidR="00B90852" w:rsidRPr="00B90852">
+        <w:rPr>
+          <w:b/>
+          <w:color w:val="FF0000"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t xml:space="preserve">edit the </w:t>
+      </w:r>
+      <w:r w:rsidR="00747C65">
+        <w:rPr>
+          <w:b/>
+          <w:color w:val="FF0000"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t xml:space="preserve">xml </w:t>
+      </w:r>
+      <w:r w:rsidR="00B90852" w:rsidRPr="00B90852">
+        <w:rPr>
+          <w:b/>
+          <w:color w:val="FF0000"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t>template manually after creating</w:t>
+      </w:r>
+      <w:r w:rsidR="00747C65">
+        <w:rPr>
+          <w:b/>
+          <w:color w:val="FF0000"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> in Word</w:t>
+      </w:r>
+      <w:r w:rsidR="00B90852" w:rsidRPr="00B90852">
+        <w:rPr>
+          <w:b/>
+          <w:color w:val="FF0000"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t xml:space="preserve">, to prepare the </w:t>
+      </w:r>
+      <w:r w:rsidR="00747C65">
+        <w:rPr>
+          <w:b/>
+          <w:color w:val="FF0000"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t xml:space="preserve">ruby </w:t>
+      </w:r>
+      <w:r w:rsidR="00B90852" w:rsidRPr="00B90852">
+        <w:rPr>
+          <w:b/>
+          <w:color w:val="FF0000"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t xml:space="preserve">script </w:t>
+      </w:r>
+      <w:r w:rsidR="00747C65">
+        <w:rPr>
+          <w:b/>
+          <w:color w:val="FF0000"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t xml:space="preserve">template with </w:t>
+      </w:r>
+      <w:r w:rsidR="00B90852" w:rsidRPr="00B90852">
+        <w:rPr>
+          <w:b/>
+          <w:color w:val="FF0000"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t>it.</w:t>
+      </w:r>
+      <w:r w:rsidR="00B90852" w:rsidRPr="00B90852">
+        <w:rPr>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidR="00585580">
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t xml:space="preserve">This is very </w:t>
+      </w:r>
+      <w:r w:rsidR="00C8406D">
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t>fiddly</w:t>
+      </w:r>
+      <w:r w:rsidR="00747C65">
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> / hacky. You can’t have Wo</w:t>
+      </w:r>
+      <w:r w:rsidR="00585580">
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t xml:space="preserve">rd’s ugly markup around the fields to </w:t>
+      </w:r>
+      <w:r w:rsidR="007146EA">
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t>template</w:t>
+      </w:r>
+      <w:r w:rsidR="00585580">
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t>. It will try to break up fields with markup. Test the template, fixing it until the extra</w:t>
+      </w:r>
+      <w:r w:rsidR="00082AB5">
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t>cted word/document.xml as</w:t>
+      </w:r>
+      <w:r w:rsidR="00585580">
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> needed.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="39FDCEBC" w14:textId="77777777" w:rsidR="008F0A35" w:rsidRDefault="008F0A35">
+      <w:pPr>
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="58F0C462" w14:textId="5D631C03" w:rsidR="008F0A35" w:rsidRDefault="008F0A35" w:rsidP="008F0A35">
+      <w:pPr>
+        <w:ind w:firstLine="720"/>
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t>I frequently use this command:</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="27AAC563" w14:textId="6DD11339" w:rsidR="008F0A35" w:rsidRPr="008F0A35" w:rsidRDefault="008F0A35" w:rsidP="008F0A35">
+      <w:pPr>
+        <w:rPr>
+          <w:i/>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+      </w:pPr>
+      <w:proofErr w:type="spellStart"/>
+      <w:proofErr w:type="gramStart"/>
+      <w:r w:rsidRPr="008F0A35">
+        <w:rPr>
+          <w:i/>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t>rm</w:t>
+      </w:r>
+      <w:proofErr w:type="spellEnd"/>
+      <w:proofErr w:type="gramEnd"/>
+      <w:r w:rsidRPr="008F0A35">
+        <w:rPr>
+          <w:i/>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> -</w:t>
+      </w:r>
+      <w:proofErr w:type="spellStart"/>
+      <w:r w:rsidRPr="008F0A35">
+        <w:rPr>
+          <w:i/>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t>rf</w:t>
+      </w:r>
+      <w:proofErr w:type="spellEnd"/>
+      <w:r w:rsidRPr="008F0A35">
+        <w:rPr>
+          <w:i/>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> word/; </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t xml:space="preserve">  </w:t>
+      </w:r>
+      <w:r w:rsidRPr="008F0A35">
+        <w:rPr>
+          <w:i/>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t xml:space="preserve">unzip ExampleTemplate.docx </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidRPr="008F0A35">
+        <w:rPr>
+          <w:i/>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t>word/document.xml;</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t xml:space="preserve">  </w:t>
+      </w:r>
+      <w:r w:rsidRPr="008F0A35">
+        <w:rPr>
+          <w:i/>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> mate word/document.xml</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="5BB1810B" w14:textId="261C92C9" w:rsidR="007146EA" w:rsidRDefault="007146EA" w:rsidP="008F0A35">
+      <w:pPr>
+        <w:ind w:firstLine="720"/>
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+      </w:pPr>
+      <w:proofErr w:type="spellStart"/>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t>Grep</w:t>
+      </w:r>
+      <w:proofErr w:type="spellEnd"/>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t xml:space="preserve">/search for all $ and # lines and ensure no </w:t>
+      </w:r>
+      <w:proofErr w:type="spellStart"/>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t>templating</w:t>
+      </w:r>
+      <w:proofErr w:type="spellEnd"/>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> is split with xml markup.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="722A9C10" w14:textId="31653087" w:rsidR="008F0A35" w:rsidRDefault="008F0A35" w:rsidP="008F0A35">
+      <w:pPr>
+        <w:ind w:firstLine="720"/>
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t>And then re-add the edited document:</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="33B7E8A7" w14:textId="2EDBE459" w:rsidR="008F0A35" w:rsidRPr="008F0A35" w:rsidRDefault="008F0A35" w:rsidP="008F0A35">
+      <w:pPr>
+        <w:rPr>
+          <w:i/>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+      </w:pPr>
+      <w:proofErr w:type="gramStart"/>
+      <w:r w:rsidRPr="008F0A35">
+        <w:rPr>
+          <w:i/>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t>zip</w:t>
+      </w:r>
+      <w:proofErr w:type="gramEnd"/>
+      <w:r w:rsidRPr="008F0A35">
+        <w:rPr>
+          <w:i/>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> ExampleTemplate.docx word/document.xml</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="2CD2E4BC" w14:textId="77777777" w:rsidR="00B90852" w:rsidRDefault="00B90852" w:rsidP="00B90852">
+      <w:pPr>
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="36566E51" w14:textId="610737F3" w:rsidR="00B90852" w:rsidRDefault="00D80FC0" w:rsidP="00B90852">
+      <w:pPr>
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t>PRO TIP:</w:t>
+      </w:r>
+      <w:r w:rsidR="00B90852">
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> You don’t want any grammar errors on the template Keys, or they will not substitute. </w:t>
+      </w:r>
+      <w:r w:rsidR="008F0A35">
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t>(</w:t>
+      </w:r>
+      <w:r w:rsidR="00254FEB">
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t>Grammar suggestion markup</w:t>
+      </w:r>
+      <w:r w:rsidR="008F0A35">
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> split</w:t>
+      </w:r>
+      <w:r w:rsidR="00254FEB">
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t>s up the tokens in the</w:t>
+      </w:r>
+      <w:r w:rsidR="008F0A35">
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> xml).</w:t>
+      </w:r>
+      <w:r w:rsidR="00871363">
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> Right click and choose Ignore each grammar error.</w:t>
+      </w:r>
+      <w:bookmarkStart w:id="0" w:name="_GoBack"/>
+      <w:bookmarkEnd w:id="0"/>
+    </w:p>
+    <w:p w14:paraId="7F274836" w14:textId="77777777" w:rsidR="009F2DA5" w:rsidRDefault="009F2DA5">
+      <w:pPr>
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="4C607FC6" w14:textId="57C1EBE3" w:rsidR="00D05893" w:rsidRPr="00D05893" w:rsidRDefault="00D05893">
+      <w:pPr>
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="00D05893">
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Example repeating </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t>table template</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00D05893">
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> for several rows, along with summation of total number of rows above.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="2E3C7D01" w14:textId="1133B401" w:rsidR="00EA6631" w:rsidRDefault="00EA6631" w:rsidP="00EA6631"/>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblStyle w:val="LightList"/>
+        <w:tblW w:w="0" w:type="auto"/>
+        <w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="2952"/>
+        <w:gridCol w:w="2952"/>
+        <w:gridCol w:w="2952"/>
+      </w:tblGrid>
+      <w:tr w:rsidR="00EA6631" w14:paraId="516F11A8" w14:textId="77777777" w:rsidTr="00974FD1">
+        <w:trPr>
+          <w:cnfStyle w:val="100000000000" w:firstRow="1" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:cnfStyle w:val="001000000000" w:firstRow="0" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+            <w:tcW w:w="2952" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w14:paraId="5F32D215" w14:textId="1C5C7930" w:rsidR="00EA6631" w:rsidRDefault="00EA6631" w:rsidP="00EA6631">
+            <w:r>
+              <w:t>Name</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2952" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w14:paraId="3BB26AA9" w14:textId="22A1E155" w:rsidR="00EA6631" w:rsidRDefault="00EA6631" w:rsidP="00EA6631">
+            <w:pPr>
+              <w:cnfStyle w:val="100000000000" w:firstRow="1" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+            </w:pPr>
+            <w:r>
+              <w:t>Age</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2952" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w14:paraId="46B2B8F9" w14:textId="749AB38A" w:rsidR="00EA6631" w:rsidRDefault="007146EA" w:rsidP="00EA6631">
+            <w:pPr>
+              <w:cnfStyle w:val="100000000000" w:firstRow="1" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+            </w:pPr>
+            <w:r>
+              <w:t>Attendance</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00EA6631" w14:paraId="242E3964" w14:textId="77777777" w:rsidTr="00974FD1">
+        <w:trPr>
+          <w:cnfStyle w:val="000000100000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="1" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:cnfStyle w:val="001000000000" w:firstRow="0" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+            <w:tcW w:w="2952" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w14:paraId="2D0534C5" w14:textId="77AACF60" w:rsidR="00EA6631" w:rsidRPr="00927C6F" w:rsidRDefault="00927C6F" w:rsidP="00B95480">
+            <w:pPr>
+              <w:rPr>
+                <w:b w:val="0"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+              </w:rPr>
+              <w:t>#BEGIN_ROW:ROSTER#</w:t>
+            </w:r>
+            <w:r w:rsidR="001C1230" w:rsidRPr="00927C6F">
+              <w:rPr>
+                <w:b w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> </w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2952" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w14:paraId="3BC64222" w14:textId="329079BD" w:rsidR="00EA6631" w:rsidRPr="00D05893" w:rsidRDefault="001C1230" w:rsidP="001C1230">
+            <w:pPr>
+              <w:cnfStyle w:val="000000100000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="1" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+              <w:rPr>
+                <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00D05893">
+              <w:rPr>
+                <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>(</w:t>
+            </w:r>
+            <w:r w:rsidR="00D05893" w:rsidRPr="00D05893">
+              <w:rPr>
+                <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>This</w:t>
+            </w:r>
+            <w:r w:rsidR="00B95480" w:rsidRPr="00D05893">
+              <w:rPr>
+                <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> </w:t>
+            </w:r>
+            <w:r w:rsidR="001C145B" w:rsidRPr="00D05893">
+              <w:rPr>
+                <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">row </w:t>
+            </w:r>
+            <w:r w:rsidRPr="00D05893">
+              <w:rPr>
+                <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">only appears in </w:t>
+            </w:r>
+            <w:r w:rsidR="00D26401" w:rsidRPr="00D05893">
+              <w:rPr>
+                <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">the </w:t>
+            </w:r>
+            <w:r w:rsidRPr="00D05893">
+              <w:rPr>
+                <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+                <w:sz w:val="20"/>
+              </w:rPr>
+              <w:t>template)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2952" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w14:paraId="3FE3E0A7" w14:textId="10DE66CE" w:rsidR="00EA6631" w:rsidRPr="00927C6F" w:rsidRDefault="00EA6631" w:rsidP="00EA6631">
+            <w:pPr>
+              <w:cnfStyle w:val="000000100000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="1" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="001C1230" w14:paraId="5E99CB84" w14:textId="77777777" w:rsidTr="00974FD1">
+        <w:tc>
+          <w:tcPr>
+            <w:cnfStyle w:val="001000000000" w:firstRow="0" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+            <w:tcW w:w="2952" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w14:paraId="12D150C3" w14:textId="6A09F9A0" w:rsidR="001C1230" w:rsidRPr="00927C6F" w:rsidRDefault="00927C6F" w:rsidP="001219BD">
+            <w:pPr>
+              <w:rPr>
+                <w:b w:val="0"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00927C6F">
+              <w:rPr>
+                <w:b w:val="0"/>
+              </w:rPr>
+              <w:t>$EACH:NAME$</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2952" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w14:paraId="031410DA" w14:textId="2F6B7F6B" w:rsidR="001C1230" w:rsidRPr="00927C6F" w:rsidRDefault="00927C6F" w:rsidP="00EA6631">
+            <w:pPr>
+              <w:cnfStyle w:val="000000000000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+            </w:pPr>
+            <w:r w:rsidRPr="00927C6F">
+              <w:t>$EACH:AGE$</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2952" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w14:paraId="33D71DAA" w14:textId="15568012" w:rsidR="001C1230" w:rsidRPr="00927C6F" w:rsidRDefault="00362284" w:rsidP="00EA6631">
+            <w:pPr>
+              <w:cnfStyle w:val="000000000000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+            </w:pPr>
+            <w:r>
+              <w:t>$EACH:ATTENDENCE$</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="001C1230" w14:paraId="250EE9E9" w14:textId="77777777" w:rsidTr="00974FD1">
+        <w:trPr>
+          <w:cnfStyle w:val="000000100000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="1" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:cnfStyle w:val="001000000000" w:firstRow="0" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+            <w:tcW w:w="2952" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w14:paraId="089754BB" w14:textId="06762580" w:rsidR="001C1230" w:rsidRPr="00927C6F" w:rsidRDefault="00927C6F" w:rsidP="00EA6631">
+            <w:pPr>
+              <w:rPr>
+                <w:b w:val="0"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+              </w:rPr>
+              <w:t>#END_ROW:ROSTER#</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2952" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w14:paraId="309A3A43" w14:textId="5A20C4FC" w:rsidR="001C1230" w:rsidRPr="00D05893" w:rsidRDefault="001C1230" w:rsidP="001C1230">
+            <w:pPr>
+              <w:cnfStyle w:val="000000100000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="1" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+              <w:rPr>
+                <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+                <w:sz w:val="22"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00D05893">
+              <w:rPr>
+                <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+                <w:sz w:val="22"/>
+              </w:rPr>
+              <w:t>(</w:t>
+            </w:r>
+            <w:r w:rsidR="00D05893" w:rsidRPr="00D05893">
+              <w:rPr>
+                <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+                <w:sz w:val="22"/>
+              </w:rPr>
+              <w:t>This</w:t>
+            </w:r>
+            <w:r w:rsidR="001C145B" w:rsidRPr="00D05893">
+              <w:rPr>
+                <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+                <w:sz w:val="22"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> row </w:t>
+            </w:r>
+            <w:r w:rsidRPr="00D05893">
+              <w:rPr>
+                <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+                <w:sz w:val="22"/>
+              </w:rPr>
+              <w:t xml:space="preserve">only appears in </w:t>
+            </w:r>
+            <w:r w:rsidR="00D26401" w:rsidRPr="00D05893">
+              <w:rPr>
+                <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+                <w:sz w:val="22"/>
+              </w:rPr>
+              <w:t xml:space="preserve">the </w:t>
+            </w:r>
+            <w:r w:rsidRPr="00D05893">
+              <w:rPr>
+                <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+                <w:sz w:val="22"/>
+              </w:rPr>
+              <w:t>template)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2952" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w14:paraId="27B9FC40" w14:textId="77777777" w:rsidR="001C1230" w:rsidRPr="00927C6F" w:rsidRDefault="001C1230" w:rsidP="00EA6631">
+            <w:pPr>
+              <w:cnfStyle w:val="000000100000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="1" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p w14:paraId="078D3959" w14:textId="77777777" w:rsidR="00EA6631" w:rsidRDefault="00EA6631" w:rsidP="00EA6631"/>
+    <w:p w14:paraId="1671C406" w14:textId="522BF22F" w:rsidR="00575599" w:rsidRPr="00575599" w:rsidRDefault="00575599" w:rsidP="00EA6631">
+      <w:pPr>
+        <w:rPr>
+          <w:u w:val="single"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="00575599">
+        <w:rPr>
+          <w:u w:val="single"/>
+        </w:rPr>
+        <w:t>#SUM:EVENT_REPORTS# Events</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="32800210" w14:textId="669FDE32" w:rsidR="00D05893" w:rsidRPr="00D05893" w:rsidRDefault="00D05893" w:rsidP="00D05893">
+      <w:pPr>
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="00D05893">
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Example </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t>table template when we have 2 inner rows that repeat.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="5069BD28" w14:textId="77777777" w:rsidR="00575599" w:rsidRDefault="00575599" w:rsidP="00EA6631"/>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblStyle w:val="TableGrid"/>
+        <w:tblW w:w="0" w:type="auto"/>
+        <w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="7831"/>
+      </w:tblGrid>
+      <w:tr w:rsidR="00575599" w14:paraId="4243995F" w14:textId="77777777" w:rsidTr="00575599">
+        <w:trPr>
+          <w:trHeight w:val="257"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="7831" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w14:paraId="234BCDEC" w14:textId="1BD4C190" w:rsidR="00575599" w:rsidRDefault="00575599" w:rsidP="00EA6631">
+            <w:r>
+              <w:t>#BEGIN_ROW:EVENT_REPORTS#</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00575599" w14:paraId="277C9B38" w14:textId="77777777" w:rsidTr="00575599">
+        <w:trPr>
+          <w:trHeight w:val="257"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="7831" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w14:paraId="365F9912" w14:textId="15EC7A9C" w:rsidR="00575599" w:rsidRDefault="00575599" w:rsidP="00EA6631">
+            <w:r>
+              <w:t>Name: $EACH:NAME$</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00575599" w14:paraId="4577EA3A" w14:textId="77777777" w:rsidTr="00575599">
+        <w:trPr>
+          <w:trHeight w:val="257"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="7831" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w14:paraId="725B72E1" w14:textId="375EF1A9" w:rsidR="00575599" w:rsidRDefault="00575599" w:rsidP="00EA6631">
+            <w:r>
+              <w:t>$EACH:NOTES$</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00575599" w14:paraId="47FFEA7F" w14:textId="77777777" w:rsidTr="00575599">
+        <w:trPr>
+          <w:trHeight w:val="257"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="7831" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w14:paraId="5AD783D4" w14:textId="72CAE419" w:rsidR="00575599" w:rsidRDefault="00575599" w:rsidP="00575599">
+            <w:r>
+              <w:t>#END_ROW:EVENT_REPORTS#</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p w14:paraId="2579E629" w14:textId="77777777" w:rsidR="00575599" w:rsidRPr="00EA6631" w:rsidRDefault="00575599" w:rsidP="00EA6631"/>
+    <w:p w14:paraId="59AFCE89" w14:textId="7220D9D3" w:rsidR="00CC5193" w:rsidRPr="0069391E" w:rsidRDefault="00CC5193" w:rsidP="0069391E">
+      <w:pPr>
+        <w:jc w:val="right"/>
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="0069391E">
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t>Report created $CREATED_AT$</w:t>
+      </w:r>
+      <w:r w:rsidR="007B0688">
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="A6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> for Teacher: $TEACHER$</w:t>
+      </w:r>
+    </w:p>
+    <w:sectPr w:rsidR="00CC5193" w:rsidRPr="0069391E" w:rsidSect="00B016F7">
+      <w:pgSz w:w="12240" w:h="15840"/>
+      <w:pgMar w:top="720" w:right="1170" w:bottom="720" w:left="1170" w:header="708" w:footer="708" w:gutter="0"/>
+      <w:cols w:space="708"/>
+      <w:docGrid w:linePitch="360"/>
+    </w:sectPr>
+  </w:body>
+</w:document>
