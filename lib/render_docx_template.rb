@@ -15,7 +15,6 @@ module DocxTemplater
       @data = data
     end
 
-    # naive and innefficient templating.
     def render(document)
       data.each do |key, value|
         if value.class == Array
@@ -39,14 +38,13 @@ module DocxTemplater
       # TODO ideally we would not re-parse xml doc every time
       xml = Nokogiri::XML(document)
 
-      # Often these tags in Word are broken up with various xml entries. Probably need to manually fix word/document.xml before saving the template.
       begin_row = "#BEGIN_ROW:#{key.to_s.upcase}#"
       end_row = "#END_ROW:#{key.to_s.upcase}#"
       begin_row_template = xml.xpath("//w:tr[contains(., '#{begin_row}')]", xml.root.namespaces).first
       end_row_template = xml.xpath("//w:tr[contains(., '#{end_row}')]", xml.root.namespaces).first
       log "begin_row_template: #{begin_row_template.to_s}"
       log "end_row_template: #{end_row_template.to_s}"
-      raise "unmatched template markers: #{begin_row} nil: #{begin_row_template.nil?}, #{end_row} nil: #{end_row_template.nil?}. This could be because word messed with format, or xml became invalid. See README." unless begin_row_template && end_row_template
+      raise "unmatched template markers: #{begin_row} nil: #{begin_row_template.nil?}, #{end_row} nil: #{end_row_template.nil?}. This could be because word broke up tags with it's own xml entries. See README." unless begin_row_template && end_row_template
 
       row_templates = []
       row = begin_row_template.next_sibling
@@ -75,18 +73,14 @@ module DocxTemplater
           new_row.inner_html = innards
           #log "new_row new innards: #{new_row.inner_html}"
 
-          # add this row after the template's start
           begin_row_template.add_next_sibling(new_row)
         end
       end
-      # delete unwanted template rows from document
       (row_templates + [begin_row_template, end_row_template]).map(&:unlink)
       xml.to_s
     end
   end
 
-  # Creates a new word document from an existing docx file. (You may need to modify that docx since word
-  # may munge your templating markup with in-between XML nodes.)
   class DocxCreator
     attr_reader :template_path, :data, :template_parser
 
@@ -102,20 +96,8 @@ module DocxTemplater
 
     def generate_docx_bytes
       buffer = ''
-
-      # Open the existing template file (no temp files created, just read it)
-      Zip::Archive.open(template_path) do |template|
-        n_entries = template.num_files
-
-        # Then create a new file with the output kept in-memory.
-        Zip::Archive.open_buffer(buffer, Zip::CREATE) do |archive|
-          n_entries.times do |i|
-            entry_name = template.get_name(i)
-            template.fopen(entry_name) do |f|
-              archive.add_buffer(entry_name, copy_or_template(entry_name, f))
-            end
-          end
-        end
+      read_existing_template_docx do |template|
+        create_new_zip_in_memory(buffer, template)
       end
       buffer
     end
@@ -127,5 +109,24 @@ module DocxTemplater
       return template_parser.render(f.read) if entry_name == 'word/document.xml'
       f.read
     end
+
+    def read_existing_template_docx
+      Zip::Archive.open(template_path) do |template|
+        yield template
+      end
+    end
+
+    def create_new_zip_in_memory(buffer, template)
+      n_entries = template.num_files
+      Zip::Archive.open_buffer(buffer, Zip::CREATE) do |archive|
+        n_entries.times do |i|
+          entry_name = template.get_name(i)
+          template.fopen(entry_name) do |f|
+            archive.add_buffer(entry_name, copy_or_template(entry_name, f))
+          end
+        end
+      end
+    end
+
   end
 end
