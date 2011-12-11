@@ -3,8 +3,9 @@ require 'template_processor_spec'
 
 describe "integration test", :integration => true do
   let(:data) { DocxTemplater::TestData::DATA }
-  let(:input_file) { "spec/example_input/ExampleTemplate.docx" }
-  let(:output_dir) { "spec/tmp" }
+  let(:base_path) { SPEC_BASE_PATH.join("example_input") }
+  let(:input_file) { "#{base_path}/ExampleTemplate.docx" }
+  let(:output_dir) { "#{base_path}/tmp" }
   let(:output_file) { "#{output_dir}/IntegrationTestOutput.docx" }
   before do 
     FileUtils.rm_rf(output_dir) if File.exists?(output_dir)
