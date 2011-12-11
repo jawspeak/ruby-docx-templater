@@ -3,7 +3,7 @@ require 'render_docx_template'
 require 'template_processor_spec'
 require 'fileutils'
 
-describe "integration test" do
+describe "integration test", :integration => true do
   let(:data) { DocxTemplater::TestData::DATA }
   let(:input_file) { "spec/example_input/ExampleTemplate.docx" }
   let(:output_dir) { "spec/tmp" }
