@@ -1,10 +1,10 @@
 module DocxTemplater
   class DocxCreator
-    attr_reader :template_path, :data, :template_parser
+    attr_reader :template_path, :template_processor
 
     def initialize(template_path, data)
       @template_path = template_path
-      @template_parser = TemplateProcessor.new(data)
+      @template_processor = TemplateProcessor.new(data)
     end
 
     def generate_docx_file(file_name = "output_#{Time.now.strftime("%Y-%m-%d_%H%M")}.docx")
@@ -24,7 +24,7 @@ module DocxTemplater
 
     def copy_or_template(entry_name, f)
       # Inside the word document archive is one file with contents of the actual document. Modify it.
-      return template_parser.render(f.read) if entry_name == 'word/document.xml'
+      return template_processor.render(f.read) if entry_name == 'word/document.xml'
       f.read
     end
 
