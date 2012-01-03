@@ -123,6 +123,25 @@ EOF
     end
   end
 
+  it "should enter no text for a nil value" do
+    xml = <<EOF
+<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
+<w:body>
+  <w:p>Before.$KEY$After</w:p>
+</w:body>
+</xml>
+EOF
+    actual = DocxTemplater::TemplateProcessor.new(:key => nil).render(xml)
+    expected_xml = <<EOF
+<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
+<w:body>
+  <w:p>Before.After</w:p>
+</w:body>
+</xml>
+EOF
+    actual.should == expected_xml
+  end
+
   it "should replace all simple keys with values" do
     non_array_keys = data.reject { |k, v| v.class == Array }
     non_array_keys.keys.each do |key|
