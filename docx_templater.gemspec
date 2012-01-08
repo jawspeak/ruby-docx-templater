@@ -25,7 +25,10 @@ Gem::Specification.new do |s|
   s.test_files = Dir['spec/**/*']
 
   s.add_dependency("nokogiri")
-  s.add_dependency("zipruby") # this specifically because rubyzip does not support in-memory zip file modification
+  # zipruby specifically because:
+  #  - rubyzip does not support in-memory zip file modification (in you process sensitive info that can't hit the filesystem).
+  #  - people report errors opening docx when using rubyzip (search stackoverflow)
+  s.add_dependency("zipruby")
 
   s.add_development_dependency("rake")
   s.add_development_dependency("rspec", "~> 2.7.0")
