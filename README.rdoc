@@ -7,9 +7,11 @@
 * Multi-row loops inside tables, also with whatever your formatting you wish. `#BEGIN_ROW:XYZ#`... `#END_ROW:XYZ#` see tests/example
 * Summation formula for row count `#SUM:XYZ_LIST#`
 
-== Using
+== Usage
 * Create your docx "template" in Word
-* Install rvm, and then gem dependencies: `bundle install`.
+* Install rvm and bundler
+* Your bundle needs to pull in zipruby-compat gem, which is not on rubyforge. Gemfile: `gem "zipruby-compat", :require => 'zipruby', :git => "git@github.com:jawspeak/zipruby-compatibility-with-rubyzip-fork.git", :tag => "v0.3.7"`
+* Run `bundle install`. 
 * Render new docx files from the template, ex: `ruby render_docx_template.rb`. Look for an output_*.docx file.
 * Sample output with tests: `rake spec` (unit tests) `rake integration` (opens word)
 

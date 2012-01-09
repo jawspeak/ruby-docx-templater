@@ -16,7 +16,7 @@ describe "integration test", :integration => true do
     it "generates a valid zip file (.docx)" do
       DocxTemplater::DocxCreator.new(input_file, data).generate_docx_file(output_file)
 
-      archive = Zip::Archive.open(output_file)
+      archive = ZipRuby::Archive.open(output_file)
       archive.close
 
       puts "\n************************************"
@@ -30,9 +30,9 @@ describe "integration test", :integration => true do
     end
 
     it "generates a file with the same contents as the input docx" do
-      input_entries = Zip::Archive.open(input_file) { |z| z.map(&:name) }
+      input_entries = ZipRuby::Archive.open(input_file) { |z| z.map(&:name) }
       DocxTemplater::DocxCreator.new(input_file, data).generate_docx_file(output_file)
-      output_entries = Zip::Archive.open(output_file) { |z| z.map(&:name) }
+      output_entries = ZipRuby::Archive.open(output_file) { |z| z.map(&:name) }
 
       input_entries.should == output_entries
     end
