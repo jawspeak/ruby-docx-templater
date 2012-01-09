@@ -26,9 +26,17 @@ Gem::Specification.new do |s|
 
   s.add_dependency("nokogiri")
   # zipruby specifically because:
-  #  - rubyzip does not support in-memory zip file modification (in you process sensitive info that can't hit the filesystem).
-  #  - people report errors opening docx when using rubyzip (search stackoverflow)
-  s.add_dependency("zipruby")
+  #  - rubyzip does not support in-memory zip file modification (in you process sensitive info
+  #  that can't hit the filesystem).
+  #  - people report errors opening in word docx files when altered with rubyzip (search stackoverflow)
+
+  # zipruby-compat, which is my fork of zipruby that changes the module Zip::* to ZipRuby::*,
+  #  so it does not collide with rubyzip in same project.
+  #  - see https://github.com/jawspeak/zipruby-compatibility-with-rubyzip-fork
+  # THIS gem is not installed to rubyforge. Thus, you MUST on your own, in your Gemspec, add a dependency
+  # to zipruby-compat. Example:
+  #   gem "zipruby-compat", :git => "git@github.com:jawspeak/zipruby-compatibility-with-rubyzip-fork.git", :tag => "v0.3.7"
+  s.add_dependency("zipruby-compat", "~> 0.3.7")
 
   s.add_development_dependency("rake")
   s.add_development_dependency("rspec", "~> 2.7.0")

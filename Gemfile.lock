@@ -1,9 +1,16 @@
+GIT
+  remote: git@github.com:jawspeak/zipruby-compatibility-with-rubyzip-fork.git
+  revision: f0e0668599cd95adb5d5024773a7b9eb16869a79
+  tag: v0.3.7
+  specs:
+    zipruby-compat (0.3.7)
+
 PATH
   remote: .
   specs:
     docx_templater (0.1.0)
       nokogiri
-      zipruby
+      zipruby-compat (~> 0.3.7)
 
 GEM
   remote: http://rubygems.org/
@@ -19,7 +26,6 @@ GEM
     rspec-expectations (2.7.0)
       diff-lcs (~> 1.1.2)
     rspec-mocks (2.7.0)
-    zipruby (0.3.6)
 
 PLATFORMS
   ruby
@@ -28,3 +34,4 @@ DEPENDENCIES
   docx_templater!
   rake
   rspec (~> 2.7.0)
+  zipruby-compat!
