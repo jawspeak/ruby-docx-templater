@@ -14,7 +14,17 @@ module DocxTemplater
           document = enter_multiple_values(document, key)
           document.gsub!("#SUM:#{key.to_s.upcase}#", value.count.to_s)
         else
-          document.gsub!("$#{key.to_s.upcase}$", safe(value))
+          # Massive hack
+          if key.to_s.downcase == 'connected_users_table'
+            xml = Nokogiri::XML(document)
+            t_node = xml.xpath("//w:t[contains(., 'CONNECTED_USERS_TABLE')]").first
+            new_node = xml.create_element("tbl")
+            new_node.inner_html = value
+            t_node.parent.parent.replace new_node
+            document = xml.to_s
+          else
+            document.gsub!("$#{key.to_s.upcase}$", safe(value))
+          end
         end
       end
       document

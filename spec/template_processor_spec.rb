@@ -218,4 +218,59 @@ EOF
     out.index("#{data[:roster].count} Students").should >= 0
     out.index("#{data[:event_reports].count} Events").should >= 0
   end
+  
+  
+  
+   it "massive hack" do
+    data.clear
+    data[:connected_users_table] = <<EOF
+<w:tr w:rsidR="004E1796" w:rsidRPr="00D02133" w14:paraId="26C61886" w14:textId="77777777" w:rsidTr="004B462F">
+  <w:trPr>
+    <w:cantSplit/>
+    <w:trHeight w:hRule="exact" w:val="316"/>
+    <w:jc w:val="center"/>
+  </w:trPr>
+  <w:tc>
+    <w:tcPr>
+      <w:tcW w:w="10080" w:type="dxa"/>
+      <w:gridSpan w:val="5"/>
+    </w:tcPr>
+    <w:p w14:paraId="5398C4E3" w14:textId="77777777" w:rsidR="004E1796" w:rsidRPr="00D02133" w:rsidRDefault="004E1796" w:rsidP="000176EB">
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+      </w:pPr>
+    </w:p>
+  </w:tc>
+</w:tr>
+EOF
+      xml = <<EOF
+<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
+  <w:body>
+    <w:p w14:paraId="18A7A147" w14:textId="77777777" w:rsidR="00415F5F" w:rsidRPr="00110056" w:rsidRDefault="00415F5F" w:rsidP="00366037">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:ascii="Tahoma" w:hAnsi="Tahoma" w:cs="Tahoma"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="1929CDA5" w14:textId="4F048ECA" w:rsidR="00110056" w:rsidRPr="00110056" w:rsidRDefault="00110056" w:rsidP="00366037">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:ascii="Tahoma" w:hAnsi="Tahoma" w:cs="Tahoma"/>
+          <w:sz w:val="16"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="00110056">
+        <w:rPr>
+          <w:rFonts w:ascii="Tahoma" w:hAnsi="Tahoma" w:cs="Tahoma"/>
+          <w:sz w:val="16"/>
+        </w:rPr>
+        <w:t>$CONNECTED_USERS_TABLE$</w:t>
+      </w:r>
+    </w:p>
+  </w:body>
+</xml>
+EOF
+    parser.render(xml).to_s.index('CONNECTED_USERS_TABLE').should be_nil
+  end
 end
