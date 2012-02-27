@@ -2,9 +2,9 @@ module DocxTemplater
   class DocxCreator
     attr_reader :template_path, :template_processor
 
-    def initialize(template_path, data)
+    def initialize(template_path, data, escape_html=true)
       @template_path = template_path
-      @template_processor = TemplateProcessor.new(data)
+      @template_processor = TemplateProcessor.new(data, escape_html)
     end
 
     def generate_docx_file(file_name = "output_#{Time.now.strftime("%Y-%m-%d_%H%M")}.docx")

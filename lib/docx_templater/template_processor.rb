@@ -1,10 +1,11 @@
 module DocxTemplater
   class TemplateProcessor
-    attr_reader :data
+    attr_reader :data, :escape_html
 
     # data is expected to be a hash of symbols => string or arrays of hashes.
-    def initialize(data)
+    def initialize(data, escape_html=true)
       @data = data
+      @escape_html = escape_html
     end
 
     def render(document)
@@ -22,7 +23,11 @@ module DocxTemplater
     private
 
     def safe(text)
-      text.to_s.gsub('&', '&amp;').gsub('>', '&gt;').gsub('<', '&lt;')
+      if escape_html
+        text.to_s.gsub('&', '&amp;').gsub('>', '&gt;').gsub('<', '&lt;')
+      else
+        text.to_s
+      end
     end
 
     def enter_multiple_values(document, key)

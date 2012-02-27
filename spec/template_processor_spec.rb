@@ -49,7 +49,7 @@ describe DocxTemplater::TemplateProcessor do
       Nokogiri::XML.parse(out).should be_xml
     end
 
-    it "should escape as necessary invalid xml characters" do
+    it "should escape as necessary invalid xml characters, if told to" do
       data[:building] = "23rd & A #1 floor"
       data[:classroom] = "--> 201 <!--"
       data[:roster][0][:name] = "<#Ai & Bo>"
@@ -59,6 +59,16 @@ describe DocxTemplater::TemplateProcessor do
       out.index("23rd &amp; A #1 floor").should >= 0
       out.index("--&gt; 201 &lt;!--").should >= 0
       out.index("&lt;#Ai &amp; Bo&gt;").should >= 0
+    end
+
+    context "not escape xml" do
+      let(:parser) { DocxTemplater::TemplateProcessor.new(data, false) }
+      it "does not escape the xml attributes" do
+        data[:building] = "23rd <p>&amp;</p> #1 floor"
+        out = parser.render(xml)
+        Nokogiri::XML.parse(out).should be_xml
+        out.index("23rd <p>&amp;</p> #1 floor").should >= 0
+      end
     end
   end
 
