@@ -2,3 +2,4 @@
 spec/example_input/tmp
 .idea/
 docx_templater*gem
+Gemfile.lock
