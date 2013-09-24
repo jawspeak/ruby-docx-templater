@@ -1,3 +1,5 @@
+require 'zipruby'
+
 module DocxTemplater
   class DocxCreator
     attr_reader :template_path, :template_processor

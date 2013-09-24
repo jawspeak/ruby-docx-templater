@@ -3,7 +3,6 @@ require 'bundler'
 Bundler.setup
 
 require 'rspec'
-require 'nokogiri'
 require 'fileutils'
 
 require 'docx_templater'

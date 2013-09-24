@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'nokogiri'
 
 module DocxTemplater
   module TestData

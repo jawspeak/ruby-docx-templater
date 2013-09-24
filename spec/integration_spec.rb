@@ -7,7 +7,7 @@ describe "integration test", :integration => true do
   let(:input_file) { "#{base_path}/ExampleTemplate.docx" }
   let(:output_dir) { "#{base_path}/tmp" }
   let(:output_file) { "#{output_dir}/IntegrationTestOutput.docx" }
-  before do 
+  before do
     FileUtils.rm_rf(output_dir) if File.exists?(output_dir)
     Dir.mkdir(output_dir)
   end
