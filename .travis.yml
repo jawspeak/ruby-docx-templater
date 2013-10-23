@@ -9,6 +9,5 @@ rvm:
 # TODO: remove when we get off zipruby
 matrix:
   allow_failures:
-    - rvm:
-      - jruby-19mode
-      - jruby-20mode
+    - rvm: jruby-19mode
+    - rvm: jruby-20mode
