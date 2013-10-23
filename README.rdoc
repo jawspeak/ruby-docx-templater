@@ -10,8 +10,7 @@
 == Usage
 * Create your docx "template" in Word
 * Install rvm and bundler
-* Your bundle needs to pull in zipruby-compat gem, which is not on rubyforge. Gemfile: `gem "zipruby-compat", :require => 'zipruby', :git => "git@github.com:jawspeak/zipruby-compatibility-with-rubyzip-fork.git", :tag => "v0.3.7"`
-* Run `bundle install`. 
+* Run `bundle install`.
 * Render new docx files from the template, ex: `ruby render_docx_template.rb`. Look for an output_*.docx file.
 * Sample output with tests: `rake spec` (unit tests) `rake integration` (opens word)
 
@@ -33,8 +32,8 @@ __PRO TIP:__ You don’t want any grammar errors on the template Keys, or they w
 
 
 == Future ideas
-* We could in the future use Word's MailMerge fields instead of using our own style `$KEY_ABC$` keys. We would then not have to worry about Word munging our text by inserting XML markup in-between parts of a template key #BEGIN_ROW:BLAH#. This is probably a really good idea. Also we would need to delete these other nodes that get added when Fields are added. 
-** See also: {http://tomasvarsavsky.com/2009/04/04/simple-word-document-templating-using-ruby-and-xml/} and {https://github.com/bagilevi/docx_builder/tree/master/example/plan_report_template}, 
+* We could in the future use Word's MailMerge fields instead of using our own style `$KEY_ABC$` keys. We would then not have to worry about Word munging our text by inserting XML markup in-between parts of a template key #BEGIN_ROW:BLAH#. This is probably a really good idea. Also we would need to delete these other nodes that get added when Fields are added.
+** See also: {http://tomasvarsavsky.com/2009/04/04/simple-word-document-templating-using-ruby-and-xml/} and {https://github.com/bagilevi/docx_builder/tree/master/example/plan_report_template},
 * Possibly, also use Fields to create the looping constructs. That would be a big win for preventing word adding markup between words in by text.
 * Make rendering from the template more efficient.
 * Try templating header/footer (I haven't attempted that yet because I do not have a need for it.)
