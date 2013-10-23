@@ -1,3 +1,6 @@
+{<img src="https://travis-ci.org/jawspeak/ruby-docx-templater.png" />}[https://travis-ci.org/jawspeak/ruby-docx-templater]
+
+
 = Roughly, this takes a .docx file and uses it as a template to create a new docx, with your data
 
 == Features
