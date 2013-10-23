@@ -6,3 +6,9 @@ rvm:
   - jruby-20mode
   - rbx-19mode
   - rbx-20mode
+# TODO: remove when we get off zipruby
+matrix:
+  allow_failures:
+    - rvm:
+      - jruby-19mode
+      - jruby-20mode
