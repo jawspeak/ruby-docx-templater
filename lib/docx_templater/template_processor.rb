@@ -11,7 +11,7 @@ module DocxTemplater
     end
 
     def render(document)
-      document.force_encoding('utf-8')
+      document.force_encoding(Encoding::UTF_8) if document.respond_to?(:force_encoding)
       data.each do |key, value|
         if value.class == Array
           document = enter_multiple_values(document, key)

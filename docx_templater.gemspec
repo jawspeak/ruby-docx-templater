@@ -21,12 +21,16 @@ Gem::Specification.new do |s|
   s.files = Dir['{lib,script,spec}/**/*'] + root_files
   s.test_files = Dir['spec/**/*']
 
-  s.add_dependency('nokogiri')
+  if RUBY_VERSION < '1.9.2'
+    s.add_runtime_dependency('nokogiri', '< 1.6.0')
+  else
+    s.add_runtime_dependency('nokogiri')
+  end
   # zipruby specifically because:
   #  - rubyzip does not support in-memory zip file modification (in you process sensitive info
   #  that can't hit the filesystem).
   #  - people report errors opening in word docx files when altered with rubyzip (search stackoverflow)
-  s.add_dependency('zipruby')
+  s.add_runtime_dependency('zipruby')
 
   s.add_development_dependency('rake')
   s.add_development_dependency('rspec')
