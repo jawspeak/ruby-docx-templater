@@ -4,7 +4,7 @@ module DocxTemplater
   class DocxCreator
     attr_reader :template_path, :template_processor
 
-    def initialize(template_path, data, escape_html=true)
+    def initialize(template_path, data, escape_html = true)
       @template_path = template_path
       @template_processor = TemplateProcessor.new(data, escape_html)
     end
