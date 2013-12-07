@@ -1,13 +1,10 @@
 language: ruby
 rvm:
-  - ree
-  - 1.8.7
   - 1.9.3
   - 2.0.0
   - jruby-18mode
   - jruby-19mode
   - jruby-20mode
-# TODO: remove when we get off zipruby
 matrix:
   allow_failures:
     - rvm: jruby-18mode
