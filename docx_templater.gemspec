@@ -21,11 +21,12 @@ Gem::Specification.new do |s|
   s.files = Dir['{lib,script,spec}/**/*'] + root_files
   s.test_files = Dir['spec/**/*']
 
-  if RUBY_VERSION < '1.9.2'
-    s.add_runtime_dependency('nokogiri', '< 1.6.0')
-  else
+  if RUBY_VERSION >= '1.9.2'
     s.add_runtime_dependency('nokogiri')
+  else
+    s.add_runtime_dependency('nokogiri', '~> 1.5.0')
   end
+
   # zipruby specifically because:
   #  - rubyzip does not support in-memory zip file modification (in you process sensitive info
   #  that can't hit the filesystem).
