@@ -1,5 +1,6 @@
 module DocxTemplater
-  extend self
+  module_function
+
   def log(str)
     # braindead logging
     # puts str
