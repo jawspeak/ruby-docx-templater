@@ -34,7 +34,7 @@ describe 'integration test', integration: true do
       DocxTemplater::DocxCreator.new(input_file, data).generate_docx_file(output_file)
       output_entries = Zip::File.open(output_file) { |z| z.map(&:name) }
 
-      input_entries.should == output_entries
+      expect(input_entries).to eq(output_entries)
     end
   end
 end

@@ -40,16 +40,16 @@ describe DocxTemplater::TemplateProcessor do
 
   context 'valid xml' do
     it 'should render and still be valid XML' do
-      Nokogiri::XML.parse(xml).should be_xml
+      expect(Nokogiri::XML.parse(xml)).to be_xml
       out = parser.render(xml)
-      Nokogiri::XML.parse(out).should be_xml
+      expect(Nokogiri::XML.parse(out)).to be_xml
     end
 
     it 'should accept non-ascii characters' do
       data[:teacher] = '老师'
       out = parser.render(xml)
-      out.should include('老师')
-      Nokogiri::XML.parse(out).should be_xml
+      expect(out).to include('老师')
+      expect(Nokogiri::XML.parse(out)).to be_xml
     end
 
     it 'should escape as necessary invalid xml characters, if told to' do
@@ -58,10 +58,10 @@ describe DocxTemplater::TemplateProcessor do
       data[:roster][0][:name] = '<#Ai & Bo>'
       out = parser.render(xml)
 
-      Nokogiri::XML.parse(out).should be_xml
-      out.should include('23rd &amp; A #1 floor')
-      out.should include('--&gt; 201 &lt;!--')
-      out.should include('&lt;#Ai &amp; Bo&gt;')
+      expect(Nokogiri::XML.parse(out)).to be_xml
+      expect(out).to include('23rd &amp; A #1 floor')
+      expect(out).to include('--&gt; 201 &lt;!--')
+      expect(out).to include('&lt;#Ai &amp; Bo&gt;')
     end
 
     context 'not escape xml' do
@@ -69,8 +69,8 @@ describe DocxTemplater::TemplateProcessor do
       it 'does not escape the xml attributes' do
         data[:building] = '23rd <p>&amp;</p> #1 floor'
         out = parser.render(xml)
-        Nokogiri::XML.parse(out).should be_xml
-        out.should include('23rd <p>&amp;</p> #1 floor')
+        expect(Nokogiri::XML.parse(out)).to be_xml
+        expect(out).to include('23rd <p>&amp;</p> #1 floor')
       end
     end
   end
@@ -152,38 +152,38 @@ EOF
 </w:body>
 </xml>
 EOF
-    actual.should == expected_xml
+    expect(actual).to eq(expected_xml)
   end
 
   it 'should replace all simple keys with values' do
     non_array_keys = data.reject { |k, v| v.class == Array }
     non_array_keys.keys.each do |key|
-      xml.should include("$#{key.to_s.upcase}$")
-      xml.should_not include(data[key].to_s)
+      expect(xml).to include("$#{key.to_s.upcase}$")
+      expect(xml).not_to include(data[key].to_s)
     end
     out = parser.render(xml)
 
     non_array_keys.each do |key|
-      out.should_not include("$#{key}$")
-      out.should include(data[key].to_s)
+      expect(out).not_to include("$#{key}$")
+      expect(out).to include(data[key].to_s)
     end
   end
 
   it 'should replace all array keys with values' do
-    xml.should include('#BEGIN_ROW:')
-    xml.should include('#END_ROW:')
-    xml.should include('$EACH:')
+    expect(xml).to include('#BEGIN_ROW:')
+    expect(xml).to include('#END_ROW:')
+    expect(xml).to include('$EACH:')
 
     out = parser.render(xml)
 
-    out.should_not include('#BEGIN_ROW:')
-    out.should_not include('#END_ROW:')
-    out.should_not include('$EACH:')
+    expect(out).not_to include('#BEGIN_ROW:')
+    expect(out).not_to include('#END_ROW:')
+    expect(out).not_to include('$EACH:')
 
     [:roster, :event_reports].each do |key|
       data[key].each do |row|
         row.values.map(&:to_s).each do |row_value|
-          out.should include(row_value)
+          expect(out).to include(row_value)
         end
       end
     end
@@ -191,34 +191,34 @@ EOF
 
   it 'shold render students names in the same order as the data' do
     out = parser.render(xml)
-    out.should include('Sally')
-    out.should include('Kumar')
-    out.index('Kumar').should > out.index('Sally')
+    expect(out).to include('Sally')
+    expect(out).to include('Kumar')
+    expect(out.index('Kumar')).to be > out.index('Sally')
   end
 
   it 'shold render event reports names in the same order as the data' do
     out = parser.render(xml)
-    out.should include('Science Museum Field Trip')
-    out.should include('Wilderness Center Retreat')
-    out.index('Wilderness Center Retreat').should > out.index('Science Museum Field Trip')
+    expect(out).to include('Science Museum Field Trip')
+    expect(out).to include('Wilderness Center Retreat')
+    expect(out.index('Wilderness Center Retreat')).to be > out.index('Science Museum Field Trip')
   end
 
   it 'should render 2-line event reports in same order as docx' do
     event_reports_starting_at = xml.index('#BEGIN_ROW:EVENT_REPORTS#')
-    event_reports_starting_at.should >= 0
-    xml.index('$EACH:NAME$', event_reports_starting_at).should > event_reports_starting_at
-    xml.index('$EACH:NOTES$', event_reports_starting_at).should > event_reports_starting_at
-    xml.index('$EACH:NOTES$', event_reports_starting_at).should > xml.index('$EACH:NAME$', event_reports_starting_at)
+    expect(event_reports_starting_at).to be >= 0
+    expect(xml.index('$EACH:NAME$', event_reports_starting_at)).to be > event_reports_starting_at
+    expect(xml.index('$EACH:NOTES$', event_reports_starting_at)).to be > event_reports_starting_at
+    expect(xml.index('$EACH:NOTES$', event_reports_starting_at)).to be > xml.index('$EACH:NAME$', event_reports_starting_at)
 
     out = parser.render(xml)
-    out.index('PTA sponsored event. Spoke to Astronaut with HAM radio.').should > out.index('Science Museum Field Trip')
+    expect(out.index('PTA sponsored event. Spoke to Astronaut with HAM radio.')).to be > out.index('Science Museum Field Trip')
   end
 
   it 'should render sums of input data' do
-    xml.should include('#SUM')
+    expect(xml).to include('#SUM')
     out = parser.render(xml)
-    out.should_not include('#SUM')
-    out.should include("#{data[:roster].count} Students")
-    out.should include("#{data[:event_reports].count} Events")
+    expect(out).not_to include('#SUM')
+    expect(out).to include("#{data[:roster].count} Students")
+    expect(out).to include("#{data[:event_reports].count} Events")
   end
 end
