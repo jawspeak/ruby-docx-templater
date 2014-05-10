@@ -9,7 +9,7 @@ module DocxTemplater
       @template_processor = TemplateProcessor.new(data, escape_html)
     end
 
-    def generate_docx_file(file_name = "output_#{Time.now.strftime("%Y-%m-%d_%H%M")}.docx")
+    def generate_docx_file(file_name = "output_#{Time.now.strftime('%Y-%m-%d_%H%M')}.docx")
       File.open(file_name, 'w') do |f|
         f.write(generate_docx_bytes.string)
       end

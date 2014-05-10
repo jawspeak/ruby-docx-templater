@@ -156,7 +156,7 @@ EOF
   end
 
   it 'should replace all simple keys with values' do
-    non_array_keys = data.reject { |k, v| v.class == Array }
+    non_array_keys = data.reject { |_, v| v.is_a?(Array) }
     non_array_keys.keys.each do |key|
       expect(xml).to include("$#{key.to_s.upcase}$")
       expect(xml).not_to include(data[key].to_s)

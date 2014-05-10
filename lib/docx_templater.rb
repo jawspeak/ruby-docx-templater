@@ -3,7 +3,7 @@ module DocxTemplater
 
   def log(str)
     # braindead logging
-    # puts str
+    puts str if ENV['DEBUG']
   end
 end
 
