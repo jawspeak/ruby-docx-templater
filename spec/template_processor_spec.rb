@@ -22,11 +22,11 @@ module DocxTemplater
         { name: 'Omar', age: 12, attendence: '99%' },
         { name: 'Xi', age: 11, attendence: '20%' },
         { name: 'Noushin', age: 12, attendence: '100%' }
-        ],
+      ],
       event_reports: [
         { name: 'Science Museum Field Trip', notes: 'PTA sponsored event. Spoke to Astronaut with HAM radio.' },
         { name: 'Wilderness Center Retreat', notes: '2 days hiking for charity:water fundraiser, $10,200 raised.' }
-        ],
+      ],
       created_at: '11-12-03 02:01'
     }
   end
