@@ -16,11 +16,15 @@ module DocxTemplater
     end
 
     def generate_docx_bytes
-      Zip::OutputStream.write_buffer(StringIO.new) do |out|
+      Zip::OutputStream::write_buffer do |out|
         Zip::File.open(template_path).each do |entry|
           entry_name = entry.name
           out.put_next_entry(entry_name)
-          out.write(copy_or_template(entry_name, entry.get_input_stream.read))
+          if entry.file?
+            read = entry.get_input_stream.read
+            copy_or_template = copy_or_template(entry_name, read)
+            out.write(copy_or_template)
+          end
         end
       end
     end
