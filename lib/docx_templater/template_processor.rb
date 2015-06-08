@@ -55,7 +55,7 @@ module DocxTemplater
       DocxTemplater.log("row_templates: (#{row_templates.count}) #{row_templates.map(&:to_s).inspect}")
 
       # for each data, reversed so they come out in the right order
-      data[key].reverse.each do |each_data|
+      data[key].reverse_each do |each_data|
         DocxTemplater.log("each_data: #{each_data.inspect}")
 
         # dup so we have new nodes to append
@@ -77,7 +77,7 @@ module DocxTemplater
           begin_row_template.add_next_sibling(new_row)
         end
       end
-      (row_templates + [begin_row_template, end_row_template]).map(&:unlink)
+      (row_templates + [begin_row_template, end_row_template]).each(&:unlink)
       xml.to_s
     end
   end

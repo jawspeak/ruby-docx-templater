@@ -1,10 +1,1 @@
-Documentation:
-  Enabled: false
-
-LineLength:
-  Enabled: false
-
-MethodLength:
-  Enabled: false
-
-inherit_from: rubocop-todo.yml
+inherit_from: .rubocop_todo.yml
