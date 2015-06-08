@@ -77,7 +77,7 @@ module DocxTemplater
           begin_row_template.add_next_sibling(new_row)
         end
       end
-      (row_templates + [begin_row_template, end_row_template]).map(&:unlink)
+      (row_templates + [begin_row_template, end_row_template]).each(&:unlink)
       xml.to_s
     end
   end
