@@ -44,7 +44,11 @@ module DocxTemplater
       end_row_template = xml.xpath("//w:tr[contains(., '#{end_row}')]", xml.root.namespaces).first
       DocxTemplater.log("begin_row_template: #{begin_row_template}")
       DocxTemplater.log("end_row_template: #{end_row_template}")
-      fail "unmatched template markers: #{begin_row} nil: #{begin_row_template.nil?}, #{end_row} nil: #{end_row_template.nil?}. This could be because word broke up tags with it's own xml entries. See README." unless begin_row_template && end_row_template
+
+      unless begin_row_template && end_row_template
+        puts "unmatched template markers: #{begin_row} nil: #{begin_row_template.nil?}, #{end_row} nil: #{end_row_template.nil?}. This could be because word broke up tags with it's own xml entries or your template is missing markers for an array of data. See README." 
+        return xml.to_s
+      end
 
       row_templates = []
       row = begin_row_template.next_sibling
