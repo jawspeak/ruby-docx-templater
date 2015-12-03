@@ -13,9 +13,16 @@ module DocxTemplater
     def render(document)
       document.force_encoding(Encoding::UTF_8) if document.respond_to?(:force_encoding)
       data.each do |key, value|
-        if value.class == Array
+        case value
+        when Array
           document = enter_multiple_values(document, key)
           document.gsub!("#SUM:#{key.to_s.upcase}#", value.count.to_s)
+        when TrueClass, FalseClass
+          if value
+            document.gsub!(/\#(END)?IF:#{key.to_s.upcase}\#/, '')
+          else
+            document.gsub!(/\#IF:#{key.to_s.upcase}\#.*\#ENDIF:#{key.to_s.upcase}\#/m, '')
+          end
         else
           document.gsub!("$#{key.to_s.upcase}$", safe(value))
         end
