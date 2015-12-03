@@ -27,6 +27,8 @@ module DocxTemplater
         { name: 'Science Museum Field Trip', notes: 'PTA sponsored event. Spoke to Astronaut with HAM radio.' },
         { name: 'Wilderness Center Retreat', notes: '2 days hiking for charity:water fundraiser, $10,200 raised.' }
       ],
+      true_cond: true,
+      false_cond: false,
       created_at: '11-12-03 02:01'
     }
   end
@@ -156,7 +158,7 @@ EOF
   end
 
   it 'should replace all simple keys with values' do
-    non_array_keys = data.reject { |_, v| v.is_a?(Array) }
+    non_array_keys = data.reject { |_, v| [Array, TrueClass, FalseClass].include?(v.class) }
     non_array_keys.keys.each do |key|
       expect(xml).to include("$#{key.to_s.upcase}$")
       expect(xml).not_to include(data[key].to_s)
@@ -187,6 +189,18 @@ EOF
         end
       end
     end
+  end
+
+  it 'should replace all condition keys' do
+    expect(xml).to include('#IF:')
+    expect(xml).to include('#ENDIF:')
+
+    out = parser.render(xml)
+
+    expect(out).not_to include('#IF:')
+    expect(out).not_to include('#ENDIF:')
+    expect(out).not_to include('dont show this')
+
   end
 
   it 'shold render students names in the same order as the data' do
