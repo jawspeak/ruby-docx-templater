@@ -28,7 +28,7 @@ module DocxTemplater
         { name: 'Wilderness Center Retreat', notes: '2 days hiking for charity:water fundraiser, $10,200 raised.' }
       ],
       created_at: '11-12-03 02:01'
-    }
+    }.freeze
   end
 end
 
@@ -180,7 +180,7 @@ EOF
     expect(out).not_to include('#END_ROW:')
     expect(out).not_to include('$EACH:')
 
-    [:roster, :event_reports].each do |key|
+    %i[roster event_reports].each do |key|
       data[key].each do |row|
         row.values.map(&:to_s).each do |row_value|
           expect(out).to include(row_value)

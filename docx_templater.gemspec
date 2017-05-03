@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files = ['README.rdoc']
 
   s.require_paths = ['lib']
-  root_files = %w(docx_templater.gemspec LICENSE.txt Rakefile README.rdoc .gitignore Gemfile)
+  root_files = %w[docx_templater.gemspec LICENSE.txt Rakefile README.rdoc .gitignore Gemfile]
   s.files = Dir['{lib,script,spec}/**/*'] + root_files
   s.test_files = Dir['spec/**/*']
 
