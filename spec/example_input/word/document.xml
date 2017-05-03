@@ -1112,6 +1112,136 @@
         <w:t xml:space="preserve"> for Teacher: $TEACHER$</w:t>
       </w:r>
     </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Normal"/>
+        <w:jc w:val="right"/>
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="a6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="A6A6A6" w:themeColor="background1" w:themeShade="a6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Normal"/>
+        <w:jc w:val="left"/>
+        <w:rPr>
+          <w:color w:val="00000A"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="00000A" w:themeShade="a6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t>#IF:TRUE_COND#</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Normal"/>
+        <w:jc w:val="left"/>
+        <w:rPr>
+          <w:color w:val="00000A"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="00000A" w:themeShade="a6"/>
+          <w:sz w:val="22"/>
+          <w:shd w:fill="00FF00" w:val="clear"/>
+        </w:rPr>
+        <w:t>show this</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Normal"/>
+        <w:jc w:val="left"/>
+        <w:rPr>
+          <w:color w:val="00000A"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="00000A" w:themeShade="a6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t>#ENDIF:TRUE_COND#</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Normal"/>
+        <w:jc w:val="left"/>
+        <w:rPr>
+          <w:color w:themeColor="background1" w:themeShade="a6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:color w:themeColor="background1" w:themeShade="a6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Normal"/>
+        <w:jc w:val="left"/>
+        <w:rPr>
+          <w:color w:val="00000A"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="00000A" w:themeShade="a6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t>#IF:FALSE_COND#</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Normal"/>
+        <w:jc w:val="left"/>
+        <w:rPr>
+          <w:color w:val="00000A"/>
+          <w:shd w:fill="FF0000" w:val="clear"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="00000A" w:themeShade="a6"/>
+          <w:sz w:val="22"/>
+          <w:shd w:fill="FF0000" w:val="clear"/>
+        </w:rPr>
+        <w:t>dont show this</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Normal"/>
+        <w:jc w:val="left"/>
+        <w:rPr>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="00000A" w:themeShade="a6"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+        <w:t>#ENDIF:FALSE_COND#</w:t>
+      </w:r>
+    </w:p>
     <w:sectPr w:rsidR="00CC5193" w:rsidRPr="0069391E" w:rsidSect="00B016F7">
       <w:pgSz w:w="12240" w:h="15840"/>
       <w:pgMar w:top="720" w:right="1170" w:bottom="720" w:left="1170" w:header="708" w:footer="708" w:gutter="0"/>
