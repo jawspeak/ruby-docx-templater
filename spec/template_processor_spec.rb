@@ -75,6 +75,22 @@ describe DocxTemplater::TemplateProcessor do
         expect(out).to include('23rd <p>&amp;</p> #1 floor')
       end
     end
+    context 'when unmatched array' do
+      let(:unmatched_data) do
+        data.merge(unmatched_array: ['Some data'])
+      end
+
+      it 'raised' do
+        parser = DocxTemplater::TemplateProcessor.new(unmatched_data)
+        expect { parser.render(xml) }.to raise_error
+      end
+
+      it 'skipped' do
+        parser = DocxTemplater::TemplateProcessor.new(unmatched_data, skip_unmatched: true)
+        out = parser.render(xml)
+        expect(Nokogiri::XML.parse(out)).to be_xml
+      end
+    end
   end
 
   context 'unmatched begin and end row templates' do
