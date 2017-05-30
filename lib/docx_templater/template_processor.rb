@@ -48,6 +48,8 @@ module DocxTemplater
       end_row = "#END_ROW:#{key.to_s.upcase}#"
       begin_row_template = xml.xpath("//w:tr[contains(., '#{begin_row}')]", xml.root.namespaces).first
       end_row_template = xml.xpath("//w:tr[contains(., '#{end_row}')]", xml.root.namespaces).first
+      DocxTemplater.log("begin_row_template: #{begin_row_template}")
+      DocxTemplater.log("end_row_template: #{end_row_template}")
       unless begin_row_template && end_row_template
         return document if @skip_unmatched
         raise "unmatched template markers: #{begin_row} nil: #{begin_row_template.nil?}, #{end_row} nil: #{end_row_template.nil?}. This could be because word broke up tags with it's own xml entries. See README."
@@ -59,9 +61,11 @@ module DocxTemplater
         row_templates.unshift(row)
         row = row.next_sibling
       end
+      DocxTemplater.log("row_templates: (#{row_templates.count}) #{row_templates.map(&:to_s).inspect}")
 
       # for each data, reversed so they come out in the right order
       values.reverse_each do |data|
+        DocxTemplater.log("each_data: #{values.inspect}")
         rt = row_templates.map(&:dup)
 
         each_data = {}
@@ -80,16 +84,19 @@ module DocxTemplater
 
         # dup so we have new nodes to append
         rt.map(&:dup).each do |new_row|
+          DocxTemplater.log("   new_row: #{new_row}")
           innards = new_row.inner_html
           matches = innards.scan(/\$EACH:([^\$]+)\$/)
           unless matches.empty?
+            DocxTemplater.log("   matches: #{matches.inspect}")
             matches.map(&:first).each do |each_key|
+              DocxTemplater.log("      each_key: #{each_key}")
               innards.gsub!("$EACH:#{each_key}$", each_data[each_key.downcase.to_s])
             end
           end
           # change all the internals of the new node, even if we did not template
           new_row.inner_html = innards
-          #
+          # DocxTemplater::log("new_row new innards: #{new_row.inner_html}")
           begin_row_template.add_next_sibling(new_row)
         end
       end
