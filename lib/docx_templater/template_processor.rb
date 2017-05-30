@@ -16,7 +16,7 @@ module DocxTemplater
       data.each do |key, value|
         case value
         when Array
-          document = recursive_call_array(document, key, data[key])
+          document = enter_multiple_values(document, key, data[key])
           document.gsub!("#SUM:#{key.to_s.upcase}#", value.count.to_s)
         when TrueClass, FalseClass
           if value
@@ -74,7 +74,7 @@ module DocxTemplater
             doc = Nokogiri::XML::Document.new
             root = doc.create_element 'pseudo_root', xml.root.namespaces
             root.inner_html = rt.reverse.map{|x| x.to_xml}.join
-            q = recursive_call_array root.to_xml, k, v
+            q = enter_multiple_values root.to_xml, k, v
             rt = xml.parse(q).reverse
           else
             each_data[k] = v
