@@ -2,12 +2,13 @@ require 'nokogiri'
 
 module DocxTemplater
   class TemplateProcessor
-    attr_reader :data, :escape_html
+    attr_reader :data, :escape_html, :skip_unmatched
 
     # data is expected to be a hash of symbols => string or arrays of hashes.
-    def initialize(data, escape_html = true)
+    def initialize(data, escape_html = true, skip_unmatched: false)
       @data = data
       @escape_html = escape_html
+      @skip_unmatched = skip_unmatched
     end
 
     def render(document)
@@ -51,7 +52,10 @@ module DocxTemplater
       end_row_template = xml.xpath("//w:tr[contains(., '#{end_row}')]", xml.root.namespaces).first
       DocxTemplater.log("begin_row_template: #{begin_row_template}")
       DocxTemplater.log("end_row_template: #{end_row_template}")
-      raise "unmatched template markers: #{begin_row} nil: #{begin_row_template.nil?}, #{end_row} nil: #{end_row_template.nil?}. This could be because word broke up tags with it's own xml entries. See README." unless begin_row_template && end_row_template
+      unless begin_row_template && end_row_template
+        return document if @skip_unmatched
+        raise "unmatched template markers: #{begin_row} nil: #{begin_row_template.nil?}, #{end_row} nil: #{end_row_template.nil?}. This could be because word broke up tags with it's own xml entries. See README."
+      end
 
       row_templates = []
       row = begin_row_template.next_sibling
