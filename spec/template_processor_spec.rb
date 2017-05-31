@@ -82,7 +82,7 @@ describe DocxTemplater::TemplateProcessor do
 
       it 'raised' do
         parser = DocxTemplater::TemplateProcessor.new(unmatched_data)
-        expect { parser.render(xml) }.to raise_error
+        expect { parser.render(xml) }.to raise_error(RuntimeError)
       end
 
       it 'skipped' do
