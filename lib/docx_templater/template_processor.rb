@@ -51,7 +51,7 @@ module DocxTemplater
       DocxTemplater.log("begin_row_template: #{begin_row_template}")
       DocxTemplater.log("end_row_template: #{end_row_template}")
       unless begin_row_template && end_row_template
-        return document if @skip_unmatched
+        return as_result(xml) if @skip_unmatched
         raise "unmatched template markers: #{begin_row} nil: #{begin_row_template.nil?}, #{end_row} nil: #{end_row_template.nil?}. This could be because word broke up tags with it's own xml entries. See README."
       end
 
@@ -65,7 +65,7 @@ module DocxTemplater
 
       # for each data, reversed so they come out in the right order
       values.reverse_each do |data|
-        DocxTemplater.log("each_data: #{values.inspect}")
+        DocxTemplater.log("each_data: #{data.inspect}")
         rt = row_templates.map(&:dup)
 
         each_data = {}
@@ -91,7 +91,7 @@ module DocxTemplater
             DocxTemplater.log("   matches: #{matches.inspect}")
             matches.map(&:first).each do |each_key|
               DocxTemplater.log("      each_key: #{each_key}")
-              innards.gsub!("$EACH:#{each_key}$", each_data[each_key.downcase.to_s])
+              innards.gsub!("$EACH:#{each_key}$", safe(each_data[each_key.downcase.to_sym]))
             end
           end
           # change all the internals of the new node, even if we did not template
@@ -101,6 +101,10 @@ module DocxTemplater
         end
       end
       (row_templates + [begin_row_template, end_row_template]).each(&:unlink)
+      as_result xml
+    end
+
+    def as_result xml
       if xml.root.name == 'pseudo_root'
         xml.root.inner_html
       else
