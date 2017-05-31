@@ -4,9 +4,9 @@ module DocxTemplater
   class DocxCreator
     attr_reader :template_path, :template_processor
 
-    def initialize(template_path, data, escape_html = true)
+    def initialize(template_path, data, escape_html = true, skip_unmatched: false)
       @template_path = template_path
-      @template_processor = TemplateProcessor.new(data, escape_html)
+      @template_processor = TemplateProcessor.new(data, escape_html, skip_unmatched: skip_unmatched)
     end
 
     def generate_docx_file(file_name = "output_#{Time.now.strftime('%Y-%m-%d_%H%M')}.docx")
@@ -20,7 +20,9 @@ module DocxTemplater
         Zip::File.open(template_path).each do |entry|
           entry_name = entry.name
           out.put_next_entry(entry_name)
-          out.write(copy_or_template(entry_name, entry.get_input_stream.read))
+          unless entry.directory?
+            out.write(copy_or_template(entry_name, entry.get_input_stream.read))
+          end
         end
       end
     end
