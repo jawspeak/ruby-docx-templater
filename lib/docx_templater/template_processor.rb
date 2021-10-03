@@ -24,7 +24,17 @@ module DocxTemplater
             document.gsub!(/\#IF:#{key.to_s.upcase}\#.*\#ENDIF:#{key.to_s.upcase}\#/m, '')
           end
         else
-          document.gsub!("$#{key.to_s.upcase}$", safe(value))
+          # Massive hack
+          if key.to_s.downcase == 'connected_users_table'
+            xml = Nokogiri::XML(document)
+            t_node = xml.xpath("//w:t[contains(., 'CONNECTED_USERS_TABLE')]").first
+            new_node = xml.create_element("tbl")
+            new_node.inner_html = value
+            t_node.parent.parent.replace new_node
+            document = xml.to_s
+          else
+            document.gsub!("$#{key.to_s.upcase}$", safe(value))
+          end
         end
       end
       document
